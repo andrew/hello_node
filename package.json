@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "dependencies": {
     "express": "2.2.0",
-    "coffee-script": "1.1.2"
+    "coffee-script": "1.1.2",
+    "less": "1.1.4",
+    "jade": "0.14.2"
   }
 }
