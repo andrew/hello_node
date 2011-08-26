@@ -6,11 +6,13 @@ html(lang="en")
     script(type="text/javascript", src="jquery.countdown.js")
     script(type="text/javascript")
        $(function () {
-          if ((new Date(2011, 7, 26, 25)) > (new Date()) ){
-            var d = Date(2011, 7, 26, 25)
-          }else {
-            var d = Date(2011, 7, 28, 25)
-          }
+           if ((new Date(2011, 7, 26, 26)) > (new Date()) ){
+               var d = new Date(2011, 7, 26, 25)
+             }else {
+                var d = new Date(2011, 7, 28, 25)
+             }
+
+
 
          $('#message').countdown({until: d, compact: true,  description: '', format: 'HMS', onExpiry: function(){ window.location.href = window.location.href }});
        });
