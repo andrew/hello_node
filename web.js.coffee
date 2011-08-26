@@ -2,7 +2,7 @@ express = require 'express'
 
 app = express.createServer express.logger()
 
-app.configure ->  
+app.configure ->
   app.set 'views', __dirname + '/views'
   app.set 'view engine', 'jade'
   app.use express.bodyParser()

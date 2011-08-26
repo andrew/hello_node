@@ -1,6 +1,35 @@
 !!! 5
 html(lang="en")
   head
-    title Hello Node
-    link(href='/stylesheets/bootstrap.css')
-  body!= body
+    title Node Knockout Countdow
+    script(type="text/javascript", src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js")
+    script(type="text/javascript", src="jquery.countdown.js")
+    script(type="text/javascript")
+       $(function () {
+          if ((new Date(2011, 7, 26, 25)) > (new Date()) ){
+            var d = Date(2011, 7, 26, 25)
+          }else {
+            var d = Date(2011, 7, 28, 25)
+          }
+
+         $('#message').countdown({until: d, compact: true,  description: '', format: 'HMS', onExpiry: function(){ window.location.href = window.location.href }});
+       });
+     style(type="text/css", media="screen")
+       html, body {
+         background: #000;
+         color: #fff;
+         height: 100%;
+         margin: 0;
+         padding: 0; }
+       #message {
+         margin: 150px 0 0;
+         padding: 2%;
+         width:95%;
+         text-align:center;
+         position: absolute;
+         font-size: 2100%;
+         letter-spacing: -0.05em;
+         text-transform: uppercase;
+         font-family: helvetica, sans-serif;
+         font-weight: bold; }
+body!= body
