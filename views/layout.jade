@@ -4,7 +4,7 @@ html(lang="en")
     title Node Knockout Countdow
     script(type="text/javascript", src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js")
     script(type="text/javascript", src="jquery.countdown.js")
-    script(type="text/javascript")
+    script(type="text/javascript").
        $(function () {
            if ((new Date(2011, 7, 26, 25)) > (new Date()) ){
                var d = new Date(2011, 7, 26, 25)
@@ -16,7 +16,7 @@ html(lang="en")
 
          $('#message').countdown({until: d, compact: true,  description: '', format: 'HMS', onExpiry: function(){ window.location.href = window.location.href }});
        });
-     style(type="text/css", media="screen")
+     style(type="text/css", media="screen").
        html, body {
          background: #000;
          color: #fff;
